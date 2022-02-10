@@ -12,7 +12,7 @@ export default function App() {
     <Container className='m-5'>
 
       <WrappedMap
-        googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyD_KPelqH_mI7zKv03zqMRdCg7nQJf3p2o`}
+        googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${process.env.API_KEY}`}
         loadingElement={<div style={{ height: "100%" }} />}
         containerElement={<div style={{ height: "500px" }} />}
         mapElement={<div style={{ height: "100%" }} />}
